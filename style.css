@@ -31,26 +31,27 @@ button {
 
 .card {
   height: 60%;
-  width: 70%;
+  width: 65%;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 400px));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.column-1 {
+.column {
   padding: 40px;
+}
+
+.column-first {
   background-color: var(--background-first);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.column-2 {
-  padding: 40px;
+.column-second {
   background-color: var(--background-secound);
 }
 
-.column-3 {
-  padding: 40px;
+.column-third {
   background-color: var(--background-three);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -74,9 +75,7 @@ button {
   margin-bottom: 80px;
 }
 
-.button-1,
-.button-2,
-.button-3 {
+.button {
   font-size: 16px;
   font-family: "Lexend Deca", sans-serif;
   padding: 15px;
@@ -87,10 +86,10 @@ button {
   color: var(--background-first);
 }
 
-.button-2 {
+.button-second {
   color: var(--background-secound);
 }
 
-.button-3 {
+.button-third {
   color: var(--background-three);
 }
